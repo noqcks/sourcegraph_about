@@ -12,7 +12,7 @@ heroImage: https://sourcegraphstatic.com/blog/llm-mental-models-hero.png
 socialImage: https://sourcegraphstatic.com/blog/llm-mental-models-hero.png
 ---
 
-> _This is an internal document I wrote a month ago for the Sourcegraph team to share my mental model for building and using applications based on an LLM. It mentions [Cody](https://about.sourcegraph.com/cody), Sourcegraph's AI coding assistant, but the points apply to any application using an LLM. Also, everyone should read Steve Yegge's blog post [Cheating Is All You Need](https://about.sourcegraph.com/blog/cheating-is-all-you-need)._
+> _This is an internal document I wrote a month ago for the Sourcegraph team to share my mental model for building and using applications based on an LLM. It mentions [Cody](https://sourcegraph.com/cody), Sourcegraph's AI coding assistant, but the points apply to any application using an LLM. Also, everyone should read Steve Yegge's blog post [Cheating Is All You Need](https://sourcegraph.com/blog/cheating-is-all-you-need)._
 
 
 ### You need a mental model of LLMs to build _or_ use a LLM-based product
@@ -87,7 +87,7 @@ That's basically what Cody does: it lets the LLM see the code. It's like letting
 
 Cody figures out what code to insert above your actual question, to give the LLM context. That's hard to do well! It can't just include every code file, since LLMs limit the length of the questions you can ask it ("prompt" is the technical term). So, it does some smart things to figure out which files to include. There are several techniques for doing this well.
 
-Steve Yegge, our Head of Engineering, calls this "cheating" in his awesome blog post [Cheating Is All You Need](https://about.sourcegraph.com/blog/cheating-is-all-you-need).
+Steve Yegge, our Head of Engineering, calls this "cheating" in his awesome blog post [Cheating Is All You Need](https://sourcegraph.com/blog/cheating-is-all-you-need).
 
 
 ### Cody = LLMs + the right context = 🤯
@@ -104,7 +104,7 @@ The techniques to make LLMs really good at answering code questions require acce
 
 A really good code search engine? With the best code intelligence that's getting better and more comprehensive all the time? Sourcegraph here, reporting for duty!
 
-There's much more to be said here, but this is why so many people look at Sourcegraph and think we are _perfectly_ positioned to build amazing things using AI + Sourcegraph's code intelligence and search. Everything we've built so far can be put to work feeding context into a smart LLM. (Again, see Steve Yegge's blog post [Cheating Is All You Need](https://about.sourcegraph.com/blog/cheating-is-all-you-need), and the graphic at the top of our [5.0 announcement blog post](https://storage.googleapis.com/sourcegraph-assets/blog/5.0/cip-diagram.png).)
+There's much more to be said here, but this is why so many people look at Sourcegraph and think we are _perfectly_ positioned to build amazing things using AI + Sourcegraph's code intelligence and search. Everything we've built so far can be put to work feeding context into a smart LLM. (Again, see Steve Yegge's blog post [Cheating Is All You Need](https://sourcegraph.com/blog/cheating-is-all-you-need), and the graphic at the top of our [5.0 announcement blog post](https://storage.googleapis.com/sourcegraph-assets/blog/5.0/cip-diagram.png).)
 
 Cody is essentially like a power user of Sourcegraph that can run 1000 searches and read 1000 code files in the blink of an eye, and condense all that information into a single answer (or the right code) for a user within seconds of them starting to use Sourcegraph. (And the same kind of LLM-based application can and will be built on any other kind of good search engine and dataset.)
 
