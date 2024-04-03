@@ -30,8 +30,8 @@ dependencies:
     specifier: ^2.6.0
     version: 2.12.2(react@18.2.0)
   '@visx/group':
-    specifier: ^2.10.0
-    version: 2.10.0(react@18.2.0)
+    specifier: ^3.3.0
+    version: 3.3.0(react@18.2.0)
   '@visx/responsive':
     specifier: ^2.8.0
     version: 2.10.0(react@18.2.0)
@@ -5207,6 +5207,17 @@ packages:
 
   /@visx/group@2.10.0(react@18.2.0):
     resolution: {integrity: sha512-DNJDX71f65Et1+UgQvYlZbE66owYUAfcxTkC96Db6TnxV221VKI3T5l23UWbnMzwFBP9dR3PWUjjqhhF12N5pA==}
+    peerDependencies:
+      react: ^16.0.0-0 || ^17.0.0-0 || ^18.0.0-0
+    dependencies:
+      '@types/react': 18.0.20
+      classnames: 2.3.2
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
+  /@visx/group@3.3.0(react@18.2.0):
+    resolution: {integrity: sha512-yKepDKwJqlzvnvPS0yDuW13XNrYJE4xzT6xM7J++441nu6IybWWwextyap8ey+kU651cYDb+q1Oi6aHvQwyEyw==}
     peerDependencies:
       react: ^16.0.0-0 || ^17.0.0-0 || ^18.0.0-0
     dependencies:
