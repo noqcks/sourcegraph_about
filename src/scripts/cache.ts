@@ -124,7 +124,7 @@ const loadDate = async (file: string): Promise<string | undefined> => {
 }
 
 const mapFileDataCache = async (baseDirectory: string): Promise<FileCacheObject> => {
-    const getFiles = await globby('**/*.md', { cwd: baseDirectory })
+    const getFiles = await globby.globby('**/*.md', { cwd: baseDirectory })
     const records = {
         records: Object.fromEntries(
             await Promise.all(
