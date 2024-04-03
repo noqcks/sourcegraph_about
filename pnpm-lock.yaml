@@ -24,8 +24,8 @@ dependencies:
     specifier: ^2.1.0
     version: 2.1.0
   '@visx/glyph':
-    specifier: ^2.10.0
-    version: 2.10.0(react@18.2.0)
+    specifier: ^3.3.0
+    version: 3.3.0(react@18.2.0)
   '@visx/grid':
     specifier: ^2.6.0
     version: 2.12.2(react@18.2.0)
@@ -5189,6 +5189,20 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@visx/glyph@3.3.0(react@18.2.0):
+    resolution: {integrity: sha512-U2r1rFLpim3afKuuAmrbxXGSDCaLwXHmjXxWN8PiIQPMxpS7eaa/V5g2TRd/+x0KCkaf3Ismk4VKMl8ZlrmxIQ==}
+    peerDependencies:
+      react: ^16.3.0-0 || ^17.0.0-0 || ^18.0.0-0
+    dependencies:
+      '@types/d3-shape': 1.3.8
+      '@types/react': 18.0.20
+      '@visx/group': 3.3.0(react@18.2.0)
+      classnames: 2.3.2
+      d3-shape: 1.3.7
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
   /@visx/grid@2.12.2(react@18.2.0):
     resolution: {integrity: sha512-lyMQvq5afjOh0nRqF0OBjgsLfsgUeLcFc95oj0FJ/NJ/MvtI6Gd5BxxbmYzuVfZ4f0Dm1pvtBu1swoB3451tkg==}
     peerDependencies:
@@ -5207,6 +5221,17 @@ packages:
 
   /@visx/group@2.10.0(react@18.2.0):
     resolution: {integrity: sha512-DNJDX71f65Et1+UgQvYlZbE66owYUAfcxTkC96Db6TnxV221VKI3T5l23UWbnMzwFBP9dR3PWUjjqhhF12N5pA==}
+    peerDependencies:
+      react: ^16.0.0-0 || ^17.0.0-0 || ^18.0.0-0
+    dependencies:
+      '@types/react': 18.0.20
+      classnames: 2.3.2
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
+  /@visx/group@3.3.0(react@18.2.0):
+    resolution: {integrity: sha512-yKepDKwJqlzvnvPS0yDuW13XNrYJE4xzT6xM7J++441nu6IybWWwextyap8ey+kU651cYDb+q1Oi6aHvQwyEyw==}
     peerDependencies:
       react: ^16.0.0-0 || ^17.0.0-0 || ^18.0.0-0
     dependencies:
