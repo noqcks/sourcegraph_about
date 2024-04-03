@@ -53,7 +53,7 @@
     "@heroicons/react": "^2.0.15",
     "@popperjs/core": "^2.11.7",
     "@visx/axis": "^2.12.2",
-    "@visx/curve": "^2.1.0",
+    "@visx/curve": "^3.3.0",
     "@visx/glyph": "^2.10.0",
     "@visx/grid": "^2.6.0",
     "@visx/group": "^2.10.0",
