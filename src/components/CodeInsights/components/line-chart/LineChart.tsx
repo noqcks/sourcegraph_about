@@ -276,7 +276,7 @@ export function LineChartContent<Datum extends object>(props: LineChartContentPr
                                     orientation="left"
                                     tickValues={yTicks}
                                     tickFormat={numberFormatter}
-                                    tickLabelProps={(value, index) => getTickYProps(value, index)}
+                                    tickLabelProps={getTickYProps}
                                     tickComponent={Tick}
                                     axisLineClassName={classNames(styles.axisLine, styles.axisLineVertical)}
                                     tickClassName={classNames(styles.axisTick, styles.axisTickVertical)}
