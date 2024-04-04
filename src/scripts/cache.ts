@@ -1,7 +1,7 @@
 import fs from 'fs/promises'
 import path from 'path'
 
-import globby from 'globby'
+import { globby } from 'globby'
 import matter from 'gray-matter'
 
 interface Post {
