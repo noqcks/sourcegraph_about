@@ -57,7 +57,7 @@
     "@visx/glyph": "^2.10.0",
     "@visx/grid": "^2.6.0",
     "@visx/group": "^2.10.0",
-    "@visx/responsive": "^2.8.0",
+    "@visx/responsive": "^3.10.2",
     "@visx/scale": "^2.2.2",
     "@visx/text": "^2.12.2",
     "@visx/xychart": "^2.9.0",
