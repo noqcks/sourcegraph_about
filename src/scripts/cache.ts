@@ -1,7 +1,7 @@
 import fs from 'fs/promises'
 import path from 'path'
 
-import { globby } from 'globby'
+import { globby } from 'globby';
 import matter from 'gray-matter'
 
 interface Post {
@@ -142,7 +142,7 @@ const mapFileDataCache = async (baseDirectory: string): Promise<FileCacheObject>
 const mapSlugDataCache = async (baseDirectory: string): Promise<SlugCacheObject> => {
     const directories = await fs.readdir(baseDirectory)
     const returnDirectorySlugs = async (directory: string): Promise<SlugObject> => {
-        const directoryFiles = await globby('**/*.md', { cwd: path.join(baseDirectory, directory) })
+        const directoryFiles = await globby('**/*.md', { cwd: path.join(baseDirectory, directory), objectMode: true }).then(results => results.map(result => result.path));
         const slugs = {
             contentDirectory: directory,
             recordSlugs: Object.fromEntries(
