@@ -67,7 +67,7 @@
     "d3-time-format": "^4.1.0",
     "feed": "^4.2.2",
     "framer-motion": "^10.16.5",
-    "globby": "^11.1.0",
+    "globby": "^14.0.1",
     "gray-matter": "^4.0.3",
     "js-cookie": "^3.0.5",
     "lottie-web": "^5.12.2",
